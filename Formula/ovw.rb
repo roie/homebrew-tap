@@ -11,7 +11,7 @@ class Ovw < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/roie/ovw/releases/download/v1.0.1/ovw_1.0.1_darwin_amd64.tar.gz"
-      sha256 "a5c953fa89ab5e76d7b5ab9d05cfddda9ee00c1bd73ea3fef9579fa3340f30f1"
+      sha256 "f36438e0d08851d2ccfef17acc7944b1f1457e79c5f684766dd17050c3f94d37"
 
       define_method(:install) do
         bin.install "ovw"
@@ -19,7 +19,7 @@ class Ovw < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/roie/ovw/releases/download/v1.0.1/ovw_1.0.1_darwin_arm64.tar.gz"
-      sha256 "ac6c088444c48b1e16501fe06c7891646ba300fa015571199fe4db9e116e09be"
+      sha256 "b001179992bf0ef000ee1e169a95a41f89158ded15bbf0a0b1adb022a666bb08"
 
       define_method(:install) do
         bin.install "ovw"
@@ -30,14 +30,14 @@ class Ovw < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/roie/ovw/releases/download/v1.0.1/ovw_1.0.1_linux_amd64.tar.gz"
-      sha256 "ed8b1a925b8c02ec97a7582271e1fd6dd2c8751a198244487d22f878669ba28d"
+      sha256 "3a88da9fed9dc5e56a930171c505015f1ec786f99aed0b46779a45d711e5a6dc"
       define_method(:install) do
         bin.install "ovw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/roie/ovw/releases/download/v1.0.1/ovw_1.0.1_linux_arm64.tar.gz"
-      sha256 "5a340f44ea95a9892872269a6ec557f1e8d2d78379cfcc6eb06cacdeeb9014e5"
+      sha256 "74f011507b8048180d70e96fc1fa0cca170a603df1a46abfeb3ad709c6d2c5f1"
       define_method(:install) do
         bin.install "ovw"
       end
