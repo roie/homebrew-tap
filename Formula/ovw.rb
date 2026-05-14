@@ -5,21 +5,21 @@
 class Ovw < Formula
   desc "A terminal overview for your local projects."
   homepage "https://github.com/roie/ovw"
-  version "1.1.1"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/roie/ovw/releases/download/v1.1.1/ovw_1.1.1_darwin_amd64.tar.gz"
-      sha256 "f3e8afac9e475e23911cbd58ada2b174a354ae8cebeb2aa1f368566ddb1e9e2d"
+      url "https://github.com/roie/ovw/releases/download/v1.2.0/ovw_1.2.0_darwin_amd64.tar.gz"
+      sha256 "35acd4a602c7f39eeef5678c513a1ad7c00b23a088e174ff11a9887bec1002ee"
 
       define_method(:install) do
         bin.install "ovw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/roie/ovw/releases/download/v1.1.1/ovw_1.1.1_darwin_arm64.tar.gz"
-      sha256 "568e81ec124c307c2586c8aaaf5f661acb933c22d8169e416f83a4889147fd9f"
+      url "https://github.com/roie/ovw/releases/download/v1.2.0/ovw_1.2.0_darwin_arm64.tar.gz"
+      sha256 "26cb36fd97b50979813542cc17d93935fdc7ff02dd584816368f5175ba667e96"
 
       define_method(:install) do
         bin.install "ovw"
@@ -29,15 +29,15 @@ class Ovw < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roie/ovw/releases/download/v1.1.1/ovw_1.1.1_linux_amd64.tar.gz"
-      sha256 "645509a161f42fd9e304878e051f8c22fbe8b10778664ff130a10dd5017bf444"
+      url "https://github.com/roie/ovw/releases/download/v1.2.0/ovw_1.2.0_linux_amd64.tar.gz"
+      sha256 "20d1b5222ae5725e16e453ab164da66c2c4951460703c614654784063cd9ad8f"
       define_method(:install) do
         bin.install "ovw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roie/ovw/releases/download/v1.1.1/ovw_1.1.1_linux_arm64.tar.gz"
-      sha256 "ee3ed1f7c7a659682d393b5a8f66f2aef69c62391e5d409ac57572745fa0f068"
+      url "https://github.com/roie/ovw/releases/download/v1.2.0/ovw_1.2.0_linux_arm64.tar.gz"
+      sha256 "d7cc4e66c973990c4584dc0eb5562a4acd6be337cc683b06f56c40d5fcea9f61"
       define_method(:install) do
         bin.install "ovw"
       end
